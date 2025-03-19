@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
   use "rebelot/kanagawa.nvim"
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use'nvim-treesitter/playground' 
+  use 'xiyaowong/transparent.nvim'
   use {
   'nvim-telescope/telescope.nvim', tag = '0.1.8',
 -- or                            , branch = '0.1.x',
@@ -58,4 +59,7 @@ return require('packer').startup(function(use)
 	  }
   }
   use 'alec-gibson/nvim-tetris'
+  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
 end)
